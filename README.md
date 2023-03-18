@@ -1,3 +1,9 @@
+# What is this?
+
+this is a repository which contains my config file s for neovim.
+
+Neovim v0.9+ is required, as this config setup requires full Lua support, with no vimscript being used. 
+
 # Available Instructions which I have added
 
 | Command | Description | Native vim command (optional) |
