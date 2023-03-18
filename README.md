@@ -15,3 +15,5 @@ Neovim v0.9+ is required, as this config setup requires full Lua support, with n
 |space-a| Add file to harpoon quick menu | |
 |<C - e>| open harpoon quick menu ||
 |<C - h,t,n,s>| quick jump to file 1,2,3,4 in harpoon menu respectively | |
+|space-u| Show undo tree - branches | |
+|space-gs| get git status of current directory | |
