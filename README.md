@@ -17,3 +17,7 @@ Neovim v0.9+ is required, as this config setup requires full Lua support, with n
 |<C - h,t,n,s>| quick jump to file 1,2,3,4 in harpoon menu respectively | |
 |space-u| Show undo tree - branches | |
 |space-gs| get git status of current directory | |
+|'<C-p>'| in files with a valid LSP, select the previous option in the list ||
+|'<C-n>'| in files with a valid LSP, select the next option in the list ||
+|'<C-y>'| in LSP menu, accept selected option ||
+|"<C-space>"| complete in LSP (not really sure) ||
