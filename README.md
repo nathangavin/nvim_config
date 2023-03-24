@@ -4,6 +4,14 @@ this is a repository which contains my config file s for neovim.
 
 Neovim v0.9+ is required, as this config setup requires full Lua support, with no vimscript being used. 
 
+# Prerequisites
+
+You need to download and install packer.nvim, the shell command for installing can be found on the 
+packer.nvim github page, and at the time of writing is :
+
+git clone --depth 1 https://github.com/wbthomason/packer.nvim\
+ ~/.local/share/nvim/site/pack/packer/start/packer.neovim
+
 # Available Instructions which I have added
 
 | Command | Description | Native vim command (optional) |
