@@ -118,3 +118,4 @@ vim.diagnostic.config({
 		only_current_line = true
 	},
 })
+vim.api.nvim_set_option("clipboard","unnamedplus")
