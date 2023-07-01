@@ -1,7 +1,7 @@
 local lsp = require('lsp-zero')
 
 lsp.preset('recommended')
-
+lsp.setup_servers({'tsserver', 'eslint', 'lua_ls', 'rust_analyzer'})
 lsp.ensure_installed({
 	'tsserver',
 	'eslint',
@@ -25,5 +25,9 @@ lsp.set_preferences({
 lsp.setup_nvim_cmp({
 	mapping = cmp_mappings
 })
+
+lsp.on_attach(function(client,bufnr)
+
+end)
 
 lsp.setup()

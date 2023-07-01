@@ -4,6 +4,20 @@ this is a repository which contains my config file s for neovim.
 
 Neovim v0.9+ is required, as this config setup requires full Lua support, with no vimscript being used. 
 
+# installing neovim
+
+Currently at time of writing, the package manager in debian will not install a 
+new enough version of neovim, currently only installing v0.4.4. We require v0.9
+at least. To install v0.9, follow these steps:
+
+1. download the tar.gz file from the neovim github page
+2. put the file into the wsl file system via windows file explorer
+3. move the file into a directory which already exists in the path (I used /usr/local/bin, the tutorial I followed used ~/.local/bin)
+4. extract the file using command `tar xzvf <filename>` - note depending on location, you may need to do sudo on every command
+5. delete tar.gz file
+6. create a symbolic link to the nvim executable in the new nvim folder, using command `ln -s /nvim-<version>/bin/nvim ./nvim` - this creates a link called nvim which links to the executable
+7. run nvim in command line, and you should be good to go.
+
 # Prerequisites
 
 You need to download and install packer.nvim, the shell command for installing can be found on the 
@@ -11,6 +25,15 @@ packer.nvim github page, and at the time of writing is :
 
 git clone --depth 1 https://github.com/wbthomason/packer.nvim\
  ~/.local/share/nvim/site/pack/packer/start/packer.neovim
+
+You will also need at least rust installed, and probably node via npm aswell. Use the following command to install rust, or look it up:
+
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+
+# next steps
+
+Go into directory, and go straight to /lua/nathan/packer.lua, go into file, do :so, then do :PackerSync to install packages
+
 
 # Available Instructions which I have added
 

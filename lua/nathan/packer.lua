@@ -22,6 +22,7 @@ return require('packer').startup(function(use)
 
   use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
   use('nvim-treesitter/playground')
+  use('mason-org/mason-registry')
   use('ThePrimeagen/harpoon')
   use('mbbill/undotree')
   use('windwp/nvim-autopairs')
@@ -31,7 +32,7 @@ return require('packer').startup(function(use)
 	  branch = 'v1.x',
 	  requires = {
 		  -- LSP Support
-		  {'neovim/nvim-lspconfig'},             -- Required
+          {'neovim/nvim-lspconfig'},             -- Required
 		  {'williamboman/mason.nvim'},           -- Optional
 		  {'williamboman/mason-lspconfig.nvim'}, -- Optional
 
