@@ -1,12 +1,20 @@
 local lsp = require('lsp-zero')
 
 lsp.preset('recommended')
-lsp.setup_servers({'tsserver', 'eslint', 'lua_ls', 'rust_analyzer'})
+lsp.setup_servers({
+    'tsserver',
+    'eslint',
+    'lua_ls',
+    'rust_analyzer',
+    'intelephense',
+})
 lsp.ensure_installed({
 	'tsserver',
 	'eslint',
 	'lua_ls',
 	'rust_analyzer',
+    'intelephense',
+    'html'
 })
 
 local cmp = require('cmp')
@@ -31,3 +39,12 @@ lsp.on_attach(function(client,bufnr)
 end)
 
 lsp.setup()
+
+vim.api.nvim_create_autocmd("FileType", {
+    pattern = "twig",
+    callback = function ()
+
+        vim.bo.filetype = "html"
+
+    end
+})
