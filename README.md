@@ -2,6 +2,8 @@
 
 this is a repository which contains my config file s for neovim.
 
+TODO: Rewrite entire thing as its no longer accurate
+
 Neovim v0.9+ is required, as this config setup requires full Lua support, with no vimscript being used. 
 
 # installing neovim
