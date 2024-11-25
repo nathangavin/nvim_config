@@ -2,7 +2,18 @@
 
 this is a repository which contains my config file s for neovim.
 
-TODO: Rewrite entire thing as its no longer accurate
+to work in wsl regarding clipboard, follow instructions here for installing win32yank.
+
+```
+
+curl -sLo/tmp/win32yank.zip https://github.com/equalsraf/win32yank/releases/download/v0.1.1/win32yank-x64.zip
+unzip -p /tmp/win32yank.zip win32yank.exe > /tmp/win32yank.exe
+chmod +x /tmp/win32yank.exe
+sudo mv /tmp/win32yank.exe /usr/local/bin/
+```
+https://stackoverflow.com/questions/75548458/copy-into-system-clipboard-from-neovim
+
+TODO: Rewrite everything below as its no longer accurate
 
 Neovim v0.9+ is required, as this config setup requires full Lua support, with no vimscript being used. 
 
