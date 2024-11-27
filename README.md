@@ -3,7 +3,6 @@
 this is a repository which contains my config file s for neovim.
 
 to work in wsl regarding clipboard, follow instructions here for installing win32yank.
-
 ```
 
 curl -sLo/tmp/win32yank.zip https://github.com/equalsraf/win32yank/releases/download/v0.1.1/win32yank-x64.zip
@@ -12,6 +11,12 @@ chmod +x /tmp/win32yank.exe
 sudo mv /tmp/win32yank.exe /usr/local/bin/
 ```
 https://stackoverflow.com/questions/75548458/copy-into-system-clipboard-from-neovim
+
+Note: to remove shfmt from auto installing and messing up formatting, go to:
+~/.local/share/nvim/lazy/LazyVim/lua/lazyvim/plugins/lsp/init.lua 
+and search for `shfmt`, then remove that line.
+
+After that, open up neovim and run the command ':MasonUninstall shfmt'
 
 TODO: Rewrite everything below as its no longer accurate
 
