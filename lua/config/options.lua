@@ -31,6 +31,7 @@ vim.opt.colorcolumn = "80"
 
 vim.g.mapleader = " "
 vim.opt.list = false
+vim.g.autoformat = false
 
 vim.g.clipboard = {
     name = "win32yank-wsl",
